@@ -80,9 +80,12 @@
     <sprite>sprites\spr_buttoninstructions</sprite>
     <sprite>sprites\spr_buttonquit</sprite>
     <sprite>sprites\spr_buttonstart</sprite>
+    <sprite>sprites\spr_buttonrestart</sprite>
+    <sprite>sprites\spr_buttonexit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background_menu</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_Guard</path>
@@ -90,6 +93,7 @@
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_item_behavior.gml</script>
+    <script>scripts\scr_pausemenu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_segoe</font>
@@ -155,17 +159,19 @@
     <object>objects\obj_instructions</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_buttonexit</object>
+    <object>objects\obj_buttonrestart</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_initialise</room>
     <room>rooms\rm_credits</room>
     <room>rooms\Guard_testing_room</room>
     <room>rooms\rm_player_mech_test</room>
-    <room>rooms\rm_initialise</room>
     <room>rooms\room5</room>
     <room>rooms\room6</room>
     <room>rooms\rm_instructions</room>
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_timer_test</room>
   </rooms>
   <help>
